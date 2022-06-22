@@ -1,0 +1,37 @@
+{
+  "name": "crop-contracts-hardhat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "echo 'Compile contracts'; npx hardhat compile",
+    "migrate:test": "echo 'Deploy contracts in test network'; npx hardhat run --network kovan scripts/deploy.js ",
+    "migrate:prod": "echo 'Deploy contracts in mainnet'; npx hardhat run --network mainnet scripts/deploy.js "
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "@etherisc/gif-connect": "^1.0.5",
+    "@etherisc/gif-interface": "^1.1.43",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "fs-jetpack": "^2.4.0",
+    "meow": "^10.1.2",
+    "openzeppelin-solidity": "^3.4.1",
+    "rimraf": "^2.7.1",
+    "solhint": "^3.3.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.9"
+  }
+}

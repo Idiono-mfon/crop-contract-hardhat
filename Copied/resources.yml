@@ -1,0 +1,31 @@
+#
+#
+#   Resources
+#   outcommented resource will not be used.
+#   update with ./bin/run utils:selectResources
+#
+
+#
+#   Contracts
+#
+contracts:
+  - Migrations.sol
+#  - Acre.sol
+#  - AcreChainlink.sol
+  - AcreOracle.sol
+  - ChainlinkOracle.sol
+
+#
+#   Migrations:
+#
+migrations:
+  - 01_initial_migration.js
+#  - 100_deploy_Acre.js
+#  - 101_deploy_AcreChainlink.js
+  - 201_deploy_AcreOracle.js
+#
+#   Tests:
+#
+test:
+
+
